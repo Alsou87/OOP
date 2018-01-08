@@ -2,7 +2,8 @@
 package OOP_calk;
 import java.util.Scanner;
 public class Qwerty {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ArithmeticException{
+        try{
         Operation operation = new Operation();
         System.out.println(operation.toString());
         Sum sum = new Sum(operation.getA(),operation.getB(),operation.getOperation1());
@@ -12,13 +13,15 @@ public class Qwerty {
 
         if (operation.getOperation1().equals("1")) {
             System.out.println(sum.toString());
-            }if (operation.getOperation1().equals("2")){
+        }if (operation.getOperation1().equals("2")){
             System.out.println(vyuch.toString());
-            }if (operation.getOperation1().equals("4")){
+        }if (operation.getOperation1().equals("4")){
             System.out.println(umn.toString());
-            }if (operation.getOperation1().equals("3")){
+        }if (operation.getOperation1().equals("3")){
             System.out.println(del.toString());
         }
 
+    } catch (ArithmeticException e) {System.out.println("Ошибка, делить на 0 нельзя!!!");}
     }
+
 }

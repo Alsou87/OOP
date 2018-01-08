@@ -1,6 +1,6 @@
 package OOP_calk;
 public class Sum extends Operation {
-        public Sum(double a, double b, String operation1) {
+        public Sum(int a, int b, String operation1) {
             super(a, b, operation1);
         }
 

@@ -1,7 +1,8 @@
 package OOP_calk;
 public class
 Del extends Operation {
-    public Del(double a, double b, String operation1) {
+
+    public Del(int a, int b, String operation1) {
         super(a, b, operation1);
     }
 
@@ -11,10 +12,15 @@ Del extends Operation {
     }
 
     public double doDel(){
-        return getA() / getB();
-    }
+
+        return getA() / getB();}
+
+
     @Override
     public String toString() {
+
         return "Деление чисел = " + doDel();
     }
+
+
 }

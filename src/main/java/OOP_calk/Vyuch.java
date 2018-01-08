@@ -1,6 +1,6 @@
 package OOP_calk;
 public class Vyuch extends Operation {
-    public Vyuch(double a, double b, String operation1) {
+    public Vyuch(int a, int b, String operation1) {
         super(a, b, operation1);
     }
 

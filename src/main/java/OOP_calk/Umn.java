@@ -1,6 +1,6 @@
 package OOP_calk;
 public class Umn extends Operation {
-    public Umn(double a, double b, String operation1) {
+    public Umn(int a, int b, String operation1) {
         super(a, b, operation1);
     }
 
