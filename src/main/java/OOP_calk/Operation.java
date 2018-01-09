@@ -1,5 +1,6 @@
 package OOP_calk;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 //родительский класс
 public class Operation {
@@ -14,6 +15,8 @@ public class Operation {
     }
 
     public Operation() {
+        try {
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите 1-ое число:");
@@ -26,7 +29,12 @@ public class Operation {
         System.out.println("3 - Деление");
         System.out.println("4 - Умножение");
         operation1 = scanner.next();
-        scanner.close();
+        scanner.close();}
+        catch (InputMismatchException e) {
+            System.out.println("Вводимое число должно иметь тип Integer!!");
+        }
+
+
     }
 
     @Override
@@ -44,7 +52,10 @@ public class Operation {
 
     public String getOperation1() {
         try {return operation1; }
-        catch (ArithmeticException e) {}
+        catch (ArithmeticException e) {
+            e.printStackTrace();
+        }
+
 
         return null;
     }

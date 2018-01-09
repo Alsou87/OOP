@@ -22,6 +22,7 @@ public class Qwerty {
         }
 
     } catch (ArithmeticException e) {System.out.println("Ошибка, делить на 0 нельзя!!!");}
+      catch (NullPointerException e) {System.out.println("Ошибка, арифметические операции выполнить нельзя, программа только для Integer!!!");}
     }
 
 }
